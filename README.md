@@ -1,4 +1,4 @@
-# GeekyJS[![NPM version](https://img.shields.io/npm/v/geeky-js.svg)]
+# GeekyJS ![NPM version](https://img.shields.io/npm/v/geeky-js.svg)
 A simple javascript library like JQuery with some optimizations.
 
 # Current Modules
