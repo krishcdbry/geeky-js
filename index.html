@@ -1,0 +1,75 @@
+<!DOCCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Geeky JS</title>
+  <style>
+  body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  input {
+    font-size: 19px;
+    padding: 7px;
+  }
+  .page-content {
+    padding-top: 10px;
+    text-align: center;
+  }
+  i {
+    font-size: 12px;
+  }
+  </style>
+</head>
+<body>
+  <div class="page-content">
+    <div id="man" class="one two three">
+      <h1>I am Geeky JS</h1>
+    </div>
+
+    <i>If multiple classes type with coma seperated </i><br/>
+    <input type="text" placeholder="Type class name" id="class-input">
+    <br/><br/>
+    <button id="addclass-btn">Add Class</button>
+    <button id="removeclass-btn">Remove Class</button>
+    <button id="removeall-btn">Remove All</button>
+    <br/><br/>
+    <mark>Tip: Check with inspect Element </mark>
+  </div>
+ <script src="dist/geeky.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+
+  var inputElem =  document.getElementById('class-input');
+  _$('#addclass-btn').click(function() {
+    var val = inputElem.value;
+    if (val.length > 0) {
+      _$('#man').addClass(val);
+      alert("Added successfully");
+      inputElem.value = null;
+     }
+  })
+
+  _$('#removeclass-btn').click(function() {
+    var val = inputElem.value;
+    if (val.length > 0) {
+      _$('#man').removeClass(val);
+      alert("Removed successfully");
+      inputElem.value = null;
+    }
+  })
+
+  _$('#removeall-btn').click(function() {
+     _$('#man').removeClass();
+    alert("Removed all classes");
+    inputElem.value = null;
+  })
+
+
+ // _$('#man')
+ //     .addClass('hello')
+ //     .addClass('5Jello')
+ //     .addClass('Heyniceone');
+
+ </script>
+</body>
+</html>

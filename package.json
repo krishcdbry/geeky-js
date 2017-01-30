@@ -1,0 +1,36 @@
+{
+  "name": "geeky-js",
+  "version": "1.0.0",
+  "description": "A simple javascript library like JQuery with some optimizations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishcdbry/geeky-js.git"
+  },
+  "keywords": [
+    "library",
+    "geeky",
+    "geeky-js",
+    "js",
+    "js-library"
+  ],
+  "author": "krishcdbry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krishcdbry/geeky-js/issues"
+  },
+  "homepage": "https://github.com/krishcdbry/geeky-js#readme",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.1"
+  }
+}
