@@ -1,6 +1,6 @@
 {
   "name": "geeky-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple javascript library like JQuery with some optimizations",
   "main": "index.js",
   "scripts": {
