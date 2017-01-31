@@ -100,7 +100,6 @@ function batchRemoveClass(itemArray, classname) {
   @return true/false
  **/
  function isAObject (data) {
-   console.log(Object.prototype.toString.call(data));
    return (data !== null && typeof data === 'object' && Object.prototype.toString.call(data) === '[object Object]');
  }
 
@@ -198,7 +197,6 @@ function batchRemoveClass(itemArray, classname) {
   @description adding the event and callback
  **/
  function click (fun) {
-   console.log(_this.currentElem);
    if (isHtmlCollection(_this.currentElem)) {
      addEvents(_this.currentElem, fun);
    }
